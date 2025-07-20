@@ -1,6 +1,6 @@
 import { useRoutes, Link } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
-import { HomePage, AboutPage } from "@/views";
+import { HomePage, AboutPage, ContactUs } from "@/views";
 import { MainLayout } from "./MainLayout";
 
 const routes = [
@@ -13,7 +13,7 @@ const routes = [
       { index: true, element: <HomePage /> },
       { path: "about", element: <AboutPage /> },
       //   { path: "shop", element: <ShopPage /> },
-      //   { path: "contact", element: <ContactPage /> },
+      { path: "contact", element: <ContactUs /> },
     ],
   },
 ];
