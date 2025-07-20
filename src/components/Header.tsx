@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -41,9 +42,9 @@ export function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" to="/">
               <img src="images/main-logo.png" className="logo h-10" />
-            </a>
+            </Link>
 
             {/* Mobile Menu Button */}
             <button
@@ -60,37 +61,37 @@ export function Header() {
             <div className="hidden md:flex items-center">
               <ul className="flex space-x-6 uppercase">
                 <li>
-                  <a
+                  <Link
                     className="text-dark hover:text-primary font-heading font-medium active"
-                    href="index.html"
+                    to="/"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="text-dark hover:text-primary font-heading font-medium"
-                    href="about.html"
+                    to="/about"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="text-dark hover:text-primary font-heading font-medium"
-                    href="shop.html"
+                    to="/shop"
                   >
                     Shop
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-dark hover:text-primary font-heading font-medium"
-                    href="contact.html"
+                    to="/contact"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -108,15 +109,15 @@ export function Header() {
               </a>
 
               {/* User Modal */}
-              <a
-                href="#"
+              <Link
+                to="/user"
                 onClick={() => setUserModalOpen(true)}
                 className="text-dark hover:text-primary"
               >
                 <svg className="w-5 h-5">
                   <use xlinkHref="#user"></use>
                 </svg>
-              </a>
+              </Link>
 
               {/* Wishlist Dropdown */}
               <div className="relative group">
