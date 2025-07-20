@@ -1,6 +1,9 @@
-export function CompanyServices() {
+import cn from "classnames";
+
+type Props = { className?: string };
+export function CompanyServices({ className }: Props) {
   return (
-    <section id="company-services" className="pt-28 pb-0">
+    <section id="company-services" className={cn("py-28", className)}>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-2">
           {/* Service 1 */}
