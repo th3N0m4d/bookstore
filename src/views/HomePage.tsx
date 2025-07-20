@@ -2,6 +2,7 @@ import {
   CompanyServices,
   ProductBillboard,
   ProductListing,
+  Socials,
 } from "@/components";
 import useEmblaCarousel from "embla-carousel-react";
 
@@ -249,6 +250,7 @@ export function HomePage() {
       </section>
 
       <ProductListing />
+      <Socials />
     </>
   );
 }
