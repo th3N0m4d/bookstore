@@ -1,4 +1,8 @@
-import { ProductListing } from "@/components";
+import {
+  CompanyServices,
+  ProductBillboard,
+  ProductListing,
+} from "@/components";
 import useEmblaCarousel from "embla-carousel-react";
 
 const PRODUCTS = [
@@ -82,6 +86,8 @@ export function HomePage() {
 
   return (
     <>
+      <ProductBillboard />
+      <CompanyServices className="pb-0" />
       <section id="best-selling-items" className="relative py-28">
         <div className="container mx-auto px-4">
           {/* Section Header */}

@@ -1,15 +1,6 @@
 import "./App.css";
 import "./styles/carousel.css";
-import AppRoutes from "./AppRoutes";
-import {
-  CompanyServices,
-  Footer,
-  Header,
-  LatestBlogs,
-  ProductBillboard,
-  Socials,
-  Testimonials,
-} from "@/components";
+import { AppRoutes } from "@/components";
 
 function App() {
   return (
@@ -345,21 +336,7 @@ function App() {
         </div>
       </div>
 
-      <Header />
-
-      <ProductBillboard />
-
-      <CompanyServices />
-
       <AppRoutes />
-
-      <Testimonials />
-
-      <LatestBlogs />
-
-      <Socials />
-
-      <Footer />
     </>
   );
 }
