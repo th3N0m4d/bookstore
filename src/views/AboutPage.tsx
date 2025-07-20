@@ -1,4 +1,9 @@
-import { PageHeader } from "@/components";
+import {
+  CompanyServices,
+  PageHeader,
+  Socials,
+  Testimonials,
+} from "@/components";
 
 export function AboutPage() {
   return (
@@ -72,6 +77,9 @@ export function AboutPage() {
           </div>
         </div>
       </section>
+      <CompanyServices className="pt-0" />
+      <Testimonials />
+      <Socials className="py-28 pb-0" />
     </>
   );
 }
