@@ -1,17 +1,8 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
-import {
-  Header,
-  Footer,
-  CompanyServices,
-  Testimonials,
-  LatestBlogs,
-  Socials,
-} from "@/components";
+import { Header, Footer } from "@/components";
 
 export function MainLayout() {
-  const location = useLocation();
-  const isNotMainRoute = location.pathname !== "/";
   return (
     <>
       <Header />
@@ -20,11 +11,6 @@ export function MainLayout() {
         <Outlet />
       </main>
 
-      {isNotMainRoute && <CompanyServices className="pt-0" />}
-
-      <Testimonials />
-      <LatestBlogs />
-      <Socials />
       <Footer />
     </>
   );
