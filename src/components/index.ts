@@ -6,3 +6,6 @@ export { Header } from "./Header";
 export { Socials } from "./Socials";
 export { ProductListing } from "./ProductListing";
 export { ProductBillboard } from "./ProductBillboard";
+export { PageHeader } from "./PageHeader";
+export { AppRoutes, Breadcrumbs } from "./Breadcrumbs";
+export { MainLayout } from "./MainLayout";
