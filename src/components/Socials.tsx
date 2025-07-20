@@ -1,6 +1,9 @@
-export function Socials() {
+import cn from "classnames";
+
+type Props = { className?: string };
+export function Socials({ className }: Props) {
   return (
-    <div className="container mx-auto px-4">
+    <div className={cn("container mx-auto px-4", className)}>
       <div className="text-center mb-8">
         <h3 className="text-4xl font-semibold">Instagram</h3>
       </div>
